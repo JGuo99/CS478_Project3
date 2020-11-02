@@ -94,10 +94,10 @@ public class FirstFragment extends ListFragment {
         setListAdapter(new ArrayAdapter<String>(getActivity(),
                 R.layout.fragment_first, MainActivity.vacatSpotArray));
 
-        if(savedState != null) {
-            retainPos = savedState.getInt("retainPos");
-            getListView().setItemChecked(retainPos, true);
-        }
+//        if(savedState != null) {
+//            retainPos = savedState.getInt("retainPos");
+//            getListView().setItemChecked(retainPos, true);
+//        }
 
         // Set the list choice mode to allow only one selection at a time
         getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
